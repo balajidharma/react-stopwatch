@@ -5,7 +5,7 @@ export default function Stopwatch()
 {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef(0);
 
   useEffect(() => {
     if (isRunning) {
